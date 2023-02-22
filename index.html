@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV en ligne de Krzysztof Baczek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/moon.png" alt="icône lune" id="icon">
+    <nav class="navbar">
+        <a href="index.html" id="logo"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <li class="button-lien"><a class="lien" href="#home" id="maison"><img src="img/home.png" alt="icône maison"></a></li>
+                <li class="button-lien"><a class="lien" href="#histoire">HISTOIRE</a></li>
+                <li class="button-lien"><a class="lien" href="#skills">COMPÉTENCES</a></li>
+                <li class="button-lien"><a class="lien" href="#projets">PROJETS</a></li>
+                <li class="button-lien"><a class="lien" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <span></span>
+        </div>
+    </nav>
+    <main>
+        <div class="parralax parralax3" id="home">
+            <h1 class="title">Krzysztof Baczek</h1>
+            <h2 class="title">APPRENTI DÉVELOPPEUR</h2>
+            <h2 class="title">TECHNICIEN DEVOPS</h2>
+            <div class="social">
+                <a href="" class="social-links"><img class="social-links-img" src="img/CV.png" alt="icône CV"></a>
+                <a href="" class="social-links"><img class="social-links-img" src="img/Linkedin.png" alt="icône Linkedin"></a>
+                <a href="" class="social-links"><img class="social-links-img" src="img/Github.png" alt="icône Github"></a>
+            </div>
+            <a href="#histoire"><div class="scroll_down"></div></a>
+        </div>
+        <div class="container" id="histoire">
+            <div class="content-histoire" id="histoire1">
+                <h1 class="font-histoire">Hello World !</h1>
+                <h2 class="font-histoire">Je suis Krzysztof</h2>
+                <p class="font-histoire">Après 2 années dans le bâtiment, j'ai décidé de mon reconvertir dans le numérique. Je suis actuellement en formation technicien DevOps au CNAM. Sur ce site tu pourras suivre mon aventure de galérien du code à pro.</p>
+            </div>
+            <div class="content-histoire" id="histoire2"></div>
+        </div>
+        <div class="parralax parralax2"></div>
+        <div class="container" id="skills">
+            <div class="content-skills">
+                <h2 class="div-skills">Compétences en développement</h2>
+                <div class="div-skills barre" id="htmlcss">HTML/CSS</div>
+                <div class="div-skills barre" id="js">JS</div>
+                <div class="div-skills barre" id="python">PYTHON</div>
+                <div class="div-skills barre" id="matlab">MATLAB</div>
+            </div>
+            <div class="content-skills">
+                <h2 class="div-skills">Compétences transverses</h2>
+                <div class="div-skills barre" id="maths">Maths</div>
+                <div class="div-skills barre" id="anglais">Anglais</div>
+                <div class="div-skills barre" id="polonais">Polonais</div>
+            </div>
+        </div>
+        <div class="parralax parralax3"></div>
+        <div class="container" id="projets">
+            <h1 id="titre-projet">Mes projets</h1>
+            <div class="grille-projets">
+                <div class="div-projets"><a href="Whack_a_mole/index.html"><img src="img/small29.jpg" id="whackmole" alt=""></a></div>
+                <div class="div-projets" id="soon"></div>
+                <div class="div-projets" id="soon"></div>
+            </div>
+        </div>
+        <div class="parralax parralax1"></div>
+        <div class="container" id="contact"></div>
+    </main>
+</body>
+    <script src="main.js"></script>
+    <script>
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")){
+            icon.src = "img/sun.png"
+        }else {
+            icon.src = "img/moon.png"
+    }
+}
+    </script>
+</html>
